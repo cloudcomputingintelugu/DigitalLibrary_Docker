@@ -6,6 +6,7 @@ app = Flask(__name__)
 def get_db():
     return mysql.connector.connect(
         host="cont-db",
+        port=3306,
         user="root",
         password="root",
         database="digital_library"
